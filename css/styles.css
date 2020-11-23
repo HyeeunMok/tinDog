@@ -1,7 +1,18 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   text-align: center;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
 }
+
 h1,
 h2,
 h3,
@@ -172,5 +183,12 @@ p {
   .title-image {
     position: static;
     transform: rotate(0);
+  }
+}
+@media only screen and (max-width: 600px) and (orientation: portrait) {
+  .big-heading {
+    font-size: 2rem;
+    line-height: 1;
+    font-weight: 700;
   }
 }
